@@ -1,0 +1,52 @@
+\section{Rings}
+
+\hspace{\parindent}Every ring is an abelian group, along with some additional requirements. Some authors define a ring differently from others. For these notes, we're going to use the following definition:
+
+\begin{definition}
+A ring is a set $R$, along with two distinct binary operations, addition (+) and multiplication ($*$), that satisfies the following:
+\begin{enumerate}
+    \item $R$ is an abelian group under $+$ with the additive identity $0$
+    \item $R$ is associative under $*$
+    \item $*$ distributes over $+$ in $R$. That is, for all $a, b, c \in R$, 
+        $$a*(b+c) = (a*b+a*c)$$
+        $$(a*b)*c = (a*c+b*c)$$
+
+\end{enumerate}
+\end{definition}
+
+Technically, the binary operations can be whatever you want, like with rings. But for simplicity, we will use addition and multiplication.
+
+Note that there is no requirement for every element in a ring $R$ to have a multiplicative inverse. Those elements with multiplicative inverses are called \emph{units} of $R$.
+
+Similar to the notation for groups, we can reference a ring by the tuple (set name, +, *). So for example, $(R, +, *)$. But since we are only considering addition and multiplication, we can just refer to the ring by its name.
+
+\begin{center}
+    \underline{Examples of rings}:
+\end{center}
+
+\begin{itemize}
+    \item $Z_n$ for some $n\in\mathbf{Z}$
+    \item $\mathbf{Q} = \{\frac{a}{b} : a, b\in\mathbf{Z}\}$
+    \item $\mathbf{Q}[x] = \{a_0 + a_1(x) + a_2(x^2) + \dots : a_i \in \mathbf{Q}\}$
+\end{itemize}
+
+The last example, $\mathbf{Q}[x]$, is the set of polynomials with rational coefficients. Polynomial rings are VERY important for the construction of finite fields. Just keep that in mind for now.
+
+Just like abelian groups, there exist abelian (commutative) rings. The only additional requirement is that the ring satisfies commutativity under multiplication.
+    
+\begin{definition}
+A subring $S$ of a ring $R$ is a subset of $R$ and satisfies the following:
+\begin{enumerate}
+    \item $S$ is itself a ring under the same operations as $R$.
+\end{enumerate}
+\end{definition}
+
+\begin{center}
+    \underline{Example of a subring}:
+\end{center}
+
+\begin{itemize}
+    \item $2\mathbf{Z} = \{2x: x\in\mathbf{Z}\}$ is a subring of $\mathbf{Z}$
+\end{itemize}
+
+$\mathbf{Z}_{10}$ has completely different binary operations than $\mathbf{Z}$. Specifically, the additive and multiplication operations $\mathbf{Z}_{10}$ are addition mod 10, and multiplication mod 10, respectively, which is different from normal addition and multiplication.

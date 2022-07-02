@@ -1,0 +1,22 @@
+\section{Fields}
+
+\hspace{\parindent}Just like how every ring is a (special type of) group, every field is a (special type of) ring. 
+
+\begin{definition}
+A field $F$ is a commutative ring where every non-zero element has a multiplicative inverse. That is, $F$ must be a commutative ring with the following additional properties:
+
+\begin{itemize}
+    \item For all $a,b\in F$, $$a*b = b*a$$
+    \item For every $0\neq a \in F$, there exists an element $a'$ such that $$a*a' = a'*a = 1$$.
+\end{itemize}
+\end{definition}
+
+Fields are essentially a structure where you can add, subtract, and multiply all numbers, WHILE being able to divide all non-zero numbers. For that reason, fields are sometimes referred to as  "division rings".
+
+We are interested in one particular type of ring, the polynomial ring ${F}[x]$. This is the set of all polynomials with coefficients in the field $F$. More formally, 
+
+$$F[x] = \{a_0 + a_1(x) + a_2(x^2) + \dots + a_n(x^n): a_i \in F.$$
+
+Note that the polynomials only consider non-negative powers of x.
+So why is $F[x]$ a ring, but not a field? Although the constants (degree 0 polynomials) are units (have multiplicative inverses), the polynomials with degree $\geq1$ are not. For example, what would be the multiplicative inverse of $x$? The element $\frac{1}{x}$ doesn't work because we only consider non-negative powers of $x$ in $F[x]$. 
+
